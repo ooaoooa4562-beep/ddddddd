@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Windows 12 — веб-версия</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2363b3ff'/%3E%3Cstop offset='1' stop-color='%237a5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='3' y='3' width='12' height='12' rx='3' fill='url(%23a)'/%3E%3Crect x='17' y='3' width='12' height='12' rx='3' fill='url(%23a)'/%3E%3Crect x='3' y='17' width='12' height='12' rx='3' fill='url(%23a)'/%3E%3Crect x='17' y='17' width='12' height='12' rx='3' fill='url(%23a)'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/shell.css">
+  <link rel="stylesheet" href="css/windows.css">
+  <link rel="stylesheet" href="css/apps.css">
+</head>
+<body>
+  <div id="os">
+    <div id="wallpaper"></div>
+    <div id="desktop" tabindex="0"></div>
+    <div id="windows"></div>
+    <div id="snap-preview"></div>
+    <div id="widgets-panel" class="flyout glass"></div>
+    <div id="start-menu" class="flyout glass"></div>
+    <div id="quick-settings" class="flyout glass"></div>
+    <div id="notif-center" class="flyout"></div>
+    <div id="taskview"></div>
+    <div id="taskbar" class="glass"></div>
+    <div id="toasts"></div>
+  </div>
+  <div id="lockscreen"></div>
+  <div id="power-screen"></div>
+  <div id="overlay-layer"></div>
+  <div id="night-light"></div>
+  <div id="brightness"></div>
+
+  <!-- ядро -->
+  <script src="js/core/utils.js"></script>
+  <script src="js/core/store.js"></script>
+  <script src="js/core/icons.js"></script>
+  <script src="js/core/sound.js"></script>
+  <script src="js/core/fs.js"></script>
+  <script src="js/core/ui.js"></script>
+  <script src="js/core/wm.js"></script>
+  <script src="js/core/apps.js"></script>
+  <script src="js/core/fileops.js"></script>
+  <script src="js/core/services.js"></script>
+  <!-- приложения -->
+  <script src="js/apps/explorer.js"></script>
+  <script src="js/apps/settings.js"></script>
+  <script src="js/apps/browser.js"></script>
+  <script src="js/apps/notepad.js"></script>
+  <script src="js/apps/calculator.js"></script>
+  <script src="js/apps/paint.js"></script>
+  <script src="js/apps/terminal.js"></script>
+  <script src="js/apps/taskmgr.js"></script>
+  <script src="js/apps/photos.js"></script>
+  <script src="js/apps/music.js"></script>
+  <script src="js/apps/clock.js"></script>
+  <script src="js/apps/calendar.js"></script>
+  <script src="js/apps/weather.js"></script>
+  <script src="js/apps/minesweeper.js"></script>
+  <script src="js/apps/game2048.js"></script>
+  <script src="js/apps/assistant.js"></script>
+  <script src="js/apps/camera.js"></script>
+  <!-- оболочка -->
+  <script src="js/shell/desktop.js"></script>
+  <script src="js/shell/taskbar.js"></script>
+  <script src="js/shell/startmenu.js"></script>
+  <script src="js/shell/panels.js"></script>
+  <script src="js/shell/taskview.js"></script>
+  <script src="js/shell/power.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
