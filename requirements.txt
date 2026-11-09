@@ -1,0 +1,1 @@
+# NEXUS / Python project dependencies\nrequests>=2.32,<3\npython-dotenv>=1.0,<2\nrich>=13.9,<15\n
